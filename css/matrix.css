@@ -1,0 +1,17 @@
+/* matrix */
+
+#matrix {
+    animation: matrix 4s infinite;
+}
+
+@keyframes matrix {
+    0% {
+        transform: matrix(0);
+    }
+    50% {
+        transform: matrix(0.586, 0.8, -0.8, 0.586, 40, 40);
+    }
+    100% {
+        transform: matrix(0);
+    }
+}

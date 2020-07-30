@@ -1,0 +1,17 @@
+/* translate 100-100*/
+
+#translate {
+    animation: translate 4s infinite;
+}
+
+@keyframes translate {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(100px, 100px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}

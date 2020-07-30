@@ -1,329 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>transition</title>
-<style>
-
-*{
-	box-sizing: border-box;
-}
-
-body{
-	padding: 100px;
-}
-	div{
-		float: left; margin-right: 100px; margin-bottom: 100px; width: 200px; height: 200px; text-align: center; background-color:lightblue;
-		display: flex; align-items: center; justify-content: center;
-	}
-
-
-
-/* matrix */
-#matrix {
-    animation: matrix 4s infinite;
-    
-}
-@keyframes matrix{
-	0%{
-		transform:matrix(0);
-	}
-	50%{
-		transform:matrix(0.586,0.8,-0.8,0.586,40,40);
-	}
-	100%{
-		transform:matrix(0);
-	}	
-}
-
-/* translate 100-100*/
-#translate {
-	animation: translate 4s infinite; 
-}
-
-@keyframes translate{
-	0%{
-		transform:translate(0);
-	}
-	50%{
-		transform:translate(100px,100px);
-	}
-	100%{
-		transform:translate(0);
-	}	
-}
-
-#translateX {
-	animation: translateX 4s infinite; 
-}
-
-@keyframes translateX{
-	0%{
-		transform:translateX(0);
-	}
-	50%{
-		transform:translateX(100px);
-	}
-	100%{
-		transform:translateX(0);
-	}	
-}
-
-
-#translateY {
-    animation: translateY 4s infinite; 
-}
-
-@keyframes translateY{
-	0%{
-		transform:translateY(0);
-	}
-	50%{
-		transform:translateY(-50px);
-	}
-	100%{
-		transform:translateY(0);
-	}	
-}
-
-#scale {
-	animation: scale 4s infinite; 
-}
-
-@keyframes scale{
-	0%{
-		transform:scale(0);
-	}
-	50%{
-		transform:scale(2,2);
-	}
-	100%{
-		transform:scale(0);
-	}	
-}
-
-#scaleX {
-    animation: scaleX 4s infinite; 
-}
-
-@keyframes scaleX{
-	0%{
-		transform:scaleX(0);
-	}
-	50%{
-		transform:scaleX(2);
-	}
-	100%{
-		transform:scaleX(0);
-	}	
-}
-
-#scaleY {
-    animation: scaleY 4s infinite; 
-}
-
-@keyframes scaleY{
-	0%{
-		transform:scaleY(0);
-	}
-	50%{
-		transform:scaleY(2);
-	}
-	100%{
-		transform:scaleY(0);
-	}	
-}
-
-#rotate {
-    animation: rotate 4s infinite;
-}
-
-@keyframes rotate{
-	0%{
-		transform:rotate(0);
-	}
-	50%{
-		transform:rotate(180deg);
-	}
-	100%{
-		transform:rotate(0);
-	}	
-}
-
-#rotateX {
-    animation: rotateX 4s infinite;
-}
-
-@keyframes rotateX{
-	0%{
-		transform:rotateX(0);
-	}
-	50%{
-		transform:rotateX(90deg);
-	}
-	100%{
-		transform:rotateX(0);
-	}	
-}
-
-#rotateY {
-    animation: rotateY 4s infinite;
-}
-
-@keyframes rotateY{
-	0%{
-		transform:rotateY(0);
-	}
-	50%{
-		transform:rotateY(90deg);
-	}
-	100%{
-		transform:rotateY(0);
-	}	
-}
-
-
-#rotateZ {
-    animation: rotateZ 4s infinite;
-}
-
-@keyframes rotateZ{
-	0%{
-		transform:rotateZ(0);
-	}
-	50%{
-		transform:rotateZ(90deg);
-	}
-	100%{
-		transform:rotateZ(0);
-	}	
-}
-
-#skew {
-    animation: skew 4s infinite;
-}
-
-@keyframes skew{
-	0%{
-		transform:skew(0);
-	}
-	50%{
-		transform:skew(30deg,30deg);
-	}
-	100%{
-		transform:skew(0);
-	}	
-}
-
-#skewX {
-    animation: skewX 4s infinite;
-}
-
-@keyframes skewX{
-	0%{
-		transform:skewX(0);
-	}
-	50%{
-		transform:skewX(30deg);
-	}
-	100%{
-		transform:skewX(0);
-	}	
-}
-
-#skewY {
-    animation: skewY 4s infinite;
-}
-
-@keyframes skewY{
-	0%{
-		transform:skewY(0);
-	}
-	50%{
-		transform:skewY(30deg);
-	}
-	100%{
-		transform:skewY(0);
-	}	
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transition</title>
+    <link rel="stylesheet" href="css/transition.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 100px;
+        }
+        
+        div {
+            float: left;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 
 </head>
+
 <body>
 
-<div id="matrix">
-	transform: <br>
-	matrix(xxx)
-</div>
+    <div id="matrix">
+        transform: <br> matrix(xxx)
+    </div>
 
-<div id="translate">
-	transform: <br>
-	translate(100px,100px)
-</div>
+    <div id="translate">
+        transform: <br> translate(100px,100px)
+    </div>
 
-<div id="translateX">
-	transform: <br>
-	translateX(100px);
-</div>
+    <div id="translateX">
+        transform: <br> translateX(100px);
+    </div>
 
-<div id="translateY">
-	transform: <br>
-	translateY(-50px);
-</div>
+    <div id="translateY">
+        transform: <br> translateY(-50px);
+    </div>
 
-<div id="scale">
-	transform: <br>
-	scale(2,2);
-</div>
+    <div id="scale">
+        transform: <br> scale(2,2);
+    </div>
 
-<div id="scaleX">
-	transform: <br>
-	scaleX(2);
-</div>
+    <div id="scaleX">
+        transform: <br> scaleX(2);
+    </div>
 
-<div id="scaleY">
-	transform: <br>
-	scaleY(2);
-</div>
+    <div id="scaleY">
+        transform: <br> scaleY(2);
+    </div>
 
-<div id="rotate">
-	transform: <br>
-	rotate(180deg);
-</div>
+    <div id="rotate">
+        transform: <br> rotate(180deg);
+    </div>
 
-<div id="rotateX">
-	transform: <br>
-	rotateX(90deg);
-</div>
+    <div id="rotateX">
+        transform: <br> rotateX(90deg);
+    </div>
 
-<div id="rotateY">
-	transform: <br>
-	rotateY(90deg);
-</div>
+    <div id="rotateY">
+        transform: <br> rotateY(90deg);
+    </div>
 
-<div id="rotateZ">
-	transform: <br>
-	rotateZ(90deg);
-</div>
+    <div id="rotateZ">
+        transform: <br> rotateZ(90deg);
+    </div>
 
-<div id="skew">
-	transform: <br>
-	skew(30deg,30deg);
-</div>
+    <div id="skew">
+        transform: <br> skew(30deg,30deg);
+    </div>
 
-<div id="skewX">
-	transform: <br>
-	skewX(30deg);
-</div>
+    <div id="skewX">
+        transform: <br> skewX(30deg);
+    </div>
 
-<div id="skewY">
-	transform: <br>
-	skewY(30deg);
-</div>
+    <div id="skewY">
+        transform: <br> skewY(30deg);
+    </div>
 
 
 </body>
+
 </html>

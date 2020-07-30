@@ -1,0 +1,15 @@
+#rotateX {
+    animation: rotateX 4s infinite;
+}
+
+@keyframes rotateX {
+    0% {
+        transform: rotateX(0);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}

@@ -1,0 +1,15 @@
+#rotateZ {
+    animation: rotateZ 4s infinite;
+}
+
+@keyframes rotateZ {
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(90deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}

@@ -1,0 +1,15 @@
+#scale {
+    animation: scale 4s infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(2, 2);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
